@@ -24,8 +24,13 @@
 
     <script>
         var div = document.querySelector('div');
-        var WIDTH = window.innerWidth;
-        var HEIGHT = window.innerHeight;
+        window.onresize = function() {
+        WIDTH = window.innerWidth;
+        HEIGHT = window.innerHeight;
+        div.style.width = WIDTH + 'px';
+        div.style.height = HEIGHT + 'px';
+}
+        
     </script>
   </body>
 </html>
